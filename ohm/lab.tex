@@ -11,6 +11,7 @@
 \usepackage{xcolor}
 \usepackage{verbatim}
 \usepackage{setspace}
+\usepackage[colorlinks,allcolors={blue}]{hyperref}
 
 % don't indent paragraphs 
 \setlength{\parindent}{0pt}
@@ -191,7 +192,7 @@ Afterwards, disassemble the setup. Take one of the multimeters, and use it to me
     \hline\hline
 \end{table}
 
-Uncertainties were calculated according to the lab instructions. We took the largest of the error of accuracy and error of precision, and rounded the uncertainty to match the decimal place of the measurement. 
+Uncertainties are calculated by taking the largest of the error of accuracy and error of precision. Error of accuracy is taken to be percentages of the reading, according to the multimeter setting. For the percentages, consult the multimeter specifications \href{https://faraday.physics.utoronto.ca/specs/tegam130a.html}{here}. Where necessary, round the uncertainty to match the decimal place of the measurement. 
 
 \newpage
 \section{Results}
@@ -210,7 +211,7 @@ So, for each resistor, we have 10 resistance calculations. Then, we calculate th
 
 The standard error is calculated as 
 \begin{align*}
-    SE = \frac{s}{\sqrt{N}},
+    SE = \frac{s}{\sqrt{10}},
 \end{align*}
 where 
 \begin{align*}
